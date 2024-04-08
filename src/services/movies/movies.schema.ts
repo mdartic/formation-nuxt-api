@@ -15,6 +15,7 @@ export const moviesSchema = Type.Object(
     year: Type.Integer(),
     city: Type.Optional(Type.String()),
     author: Type.Optional(Type.String()),
+    imageURL: Type.Optional(Type.String()),
   },
   { $id: 'Movies', additionalProperties: false }
 )
@@ -25,7 +26,7 @@ export const moviesResolver = resolve<Movies, HookContext<MoviesService>>({})
 export const moviesExternalResolver = resolve<Movies, HookContext<MoviesService>>({})
 
 // Schema for creating new entries
-export const moviesDataSchema = Type.Pick(moviesSchema, ['text', 'year', 'city', 'author'], {
+export const moviesDataSchema = Type.Pick(moviesSchema, ['text', 'year', 'city', 'author', 'imageURL'], {
   $id: 'MoviesData'
 })
 export type MoviesData = Static<typeof moviesDataSchema>

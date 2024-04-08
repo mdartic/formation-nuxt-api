@@ -9,6 +9,7 @@ export async function up(knex: Knex): Promise<void> {
     table.integer('year')
     table.string('city')
     table.string('author')
+    table.string('imageURL')
   })
 }
 

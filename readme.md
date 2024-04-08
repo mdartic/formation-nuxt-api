@@ -1,42 +1,24 @@
-# nuxt-feathers-api
+# formation-nuxt-api
 
 > API pour la formation Nuxt de Makina Sapiens
 
-## About
+## À propos
 
-This project uses [Feathers](http://feathersjs.com). An open source framework for building APIs and real-time applications.
+Ce projet utilise [Feathers](http://feathersjs.com), framework open source pour construire des APIs et des apps temps réel.
 
-## Getting Started
+## Pour démarrer
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
-
-    ```
-    cd path/to/nuxt-feathers-api
-    npm install
-    ```
-
-3. Start your app
+1. Avoir  [NodeJS](https://nodejs.org/) d'installé (version 18 ou plus) et [npm](https://www.npmjs.com/).
+2. Installation des dépendances
 
     ```
-    npm run compile # Compile TypeScript source
+    cd path/to/formation-nuxt-api
+    npm ci # to avoid update of package-lock.json
+    ```
+
+3. Démarrage de l'application
+
+    ```
     npm run migrate # Run migrations to set up the database
-    npm start
+    npm run dev
     ```
-
-## Testing
-
-Run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-This app comes with a powerful command line interface for Feathers. Here are a few things it can do:
-
-```
-$ npx feathers help                           # Show all commands
-$ npx feathers generate service               # Generate a new Service
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
